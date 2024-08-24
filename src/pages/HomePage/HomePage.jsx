@@ -22,12 +22,17 @@ const HomePage = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Trending Movies</h1>
+      <h1 className={styles.title}>Trending Movies</h1>
       <ul className={styles.movieList}>
         {movies.map((movie) => (
-          <li key={movie.id}>
-            <Link to={`/movies/${movie.id}`} state={{ from: location }}>
-              {movie.title}
+          <li key={movie.id} className={styles.movieItem}>
+            <Link to={`/movies/${movie.id}`} state={{ from: location }} className={styles.movieLink}>
+              <img 
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} 
+                alt={movie.title}
+                className={styles.movieImage}
+              />
+              <h3 className={styles.movieTitle}>{movie.title}</h3>
             </Link>
           </li>
         ))}
