@@ -1,0 +1,21 @@
+.castList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.castItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.actorInfo {
+    margin-left: 20px;
+}
+
+.actorImage {
+    width: 100px;
+    height: auto;
+}

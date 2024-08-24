@@ -25,10 +25,12 @@ const MovieCast = () => {
         <h2>Movie Cast</h2>
         <ul className={styles.castList}>
             {cast.map((actor) => (
-            <li key={actor.id}>
-                <img src={`https://image.tmdb.org/t/p/w200${actor.profile_path}`} alt={actor.name} />
-                <p>{actor.name}</p>
-                <p>Character: {actor.character}</p>
+            <li key={actor.id} className={styles.castItem}>
+                    <img src={`https://image.tmdb.org/t/p/w200${actor.profile_path}`} alt={actor.name} className={styles.actorImage}/>
+                    <div className={styles.actorInfo}>
+                        <p>{actor.name}</p>
+                        <p>Character: {actor.character}</p>
+                    </div>
             </li>
             ))}
         </ul>

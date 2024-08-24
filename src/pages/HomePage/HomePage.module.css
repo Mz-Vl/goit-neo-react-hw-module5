@@ -1,3 +1,11 @@
 .container {
     padding: 20px;
+    padding-left: 40px;
+}
+
+.movieList {
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
 }

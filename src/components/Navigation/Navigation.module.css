@@ -1,14 +1,26 @@
 .nav {
-    padding: 1rem;
+    width: 100%;
     background-color: #f0f0f0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .link {
-    margin-right: 1rem;
-    text-decoration: none;
     color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
 }
 
 .link:hover {
-    text-decoration: underline;
+    color: #007bff;
+}
+
+.link[aria-current="page"] {
+    font-weight: bold;
+    color: #007bff;
 }
