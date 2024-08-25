@@ -12,44 +12,71 @@
     color: #333;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.movieInfo {
+.backButton:hover {
+    background-color: #e0e0e0;
+}
+
+.movieContent {
     display: flex;
-    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.posterContainer {
+    flex: 0 0 300px;
 }
 
 .poster {
-    width: 300px;
+    width: 100%;
     height: auto;
-    margin-right: 30px;
+    border-radius: 8px;
 }
 
-.details {
+.movieInfo {
     flex: 1;
 }
 
-.details h1 {
-    margin-top: 0;
+.movieTitle {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.userScore {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.infoSection {
+    margin-bottom: 20px;
+}
+
+.infoTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .additionalInfo {
-    margin-top: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
 }
 
-.nav {
+.additionalLinks {
     display: flex;
     gap: 20px;
 }
 
-.link {
+.additionalLink {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.link:hover {
+.additionalLink:hover {
     background-color: #0056b3;
 }
